@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // ---------------- Supabase Setup ----------------
-    const supabaseUrl = 'https://iugyrqerbrpxzofopbmg.supabase.co';
-    const supabaseKey = 'sb_publishable_yHOmZwW2k-irJZMCdr5ppw_c8Upqk_0';
+    const supabaseUrl = 'https://zxnkutqefbrzwpyqjxxa.supabase.co';
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp4bmt1dHFlZmJyendweXFqeHhhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgzMjUwOTAsImV4cCI6MjA4MzkwMTA5MH0.zbKKHTCOQdrKDeY7eMs1cggASF2LGV-97JGcwYk9WO4';
     const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
 
     const gallery = document.getElementById('gallery');
