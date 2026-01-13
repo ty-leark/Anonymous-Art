@@ -35,9 +35,9 @@ header {
 
 .art img {
     width: 100%;
+    height: auto;
     display: block;
     border-radius: 6px;
-    aspect-ratio: 3 / 2;
     transition: transform 0.2s ease;
 }
 
