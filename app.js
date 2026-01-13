@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = src;
         img.alt = "User artwork";
         img.loading = "lazy";
-        img.width = 600;
-        img.height = 400;
 
         img.onerror = () => el.remove();
 
