@@ -26,6 +26,7 @@ header {
     column-count: 3;
     column-gap: var(--card-gap);
     padding: 12px;
+    width: 100%;
 }
 
 .art {
