@@ -1,13 +1,24 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --bg: #0b0b0b;
     --card-gap: 10px;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
     background: var(--bg);
     color: #fff;
-    font-family: system-ui,Segoe UI,Roboto,Helvetica,Arial;
+    font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial;
+    overflow-x: hidden;
 }
 
 header {
@@ -26,11 +37,10 @@ header {
     column-count: 3;
     column-gap: var(--card-gap);
     padding: 12px;
-    width: 100%;
 }
 
 .art {
-    margin:0 0 var(--card-gap);
+    margin: 0 0 var(--card-gap);
     break-inside: avoid;
 }
 
@@ -46,32 +56,38 @@ header {
     transform: scale(1.03);
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
     #gallery {
-        column-count: 2
+        column-count: 2;
     }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     #gallery {
-        column-count: 1
+        column-count: 1;
+    }
+}
+
+@media (hover: none) {
+    .art img:hover {
+        transform: none;
     }
 }
 
 .upload-btn {
-    background:#222;
-    border:1px solid #444;
-    padding:8px 12px;
-    border-radius:6px;
-    cursor:pointer;
+    background: #222;
+    border: 1px solid #444;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .upload-btn:hover { 
-    background:#2a2a2a;
+    background: #2a2a2a;
 }
 
 .upload-btn:focus-within { 
-    outline:2px solid #555;
+    outline: 2px solid #555;
 }
 
 #loader {
@@ -90,4 +106,6 @@ header {
     animation: spin 1s linear infinite;
 }
 
-@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
